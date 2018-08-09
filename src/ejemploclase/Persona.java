@@ -10,7 +10,6 @@ public class Persona {
     private String nombre;
     int edad;
     String email;
-    
     //SETTERS Y GETTERS:
     /**
      * @return nombre
@@ -34,6 +33,14 @@ public class Persona {
         return email;
     }
     public void setEmail(String vEmail){
+        this.email = vEmail;
+    }
+    //CONSTRUCTORES:
+    public Persona(){} //el constructor vacío
+    //Constructor que recibe todos los atributos como parámetros:
+    public Persona(String vNombre, int vEdad, String vEmail){
+        this.nombre = vNombre;
+        this.edad = vEdad;
         this.email = vEmail;
     }
     //METODOS:

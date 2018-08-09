@@ -22,6 +22,10 @@ public class EjemploClase {
         //utilizamos el getter para obtener el nombre:
         System.out.println("El nombre de la persona es: "+p.getNombre());
         System.out.println("Edad: "+p.getEdad()+". E-mail: "+p.getEmail()+".");
+        //creamos otra Persona utilizando el constructor con parámetros:
+        Persona per = new Persona("Pepe",20,"pepe@mail.com");
+        System.out.println(per.getNombre()+" tiene "+per.getEdad()+" años y su e-mail es "+
+                per.getEmail()+".");
     }
     
 }
